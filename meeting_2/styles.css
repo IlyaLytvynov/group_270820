@@ -1,0 +1,59 @@
+.card-usd .card-price::before {
+  content: '$';
+}
+
+.card-eur .card-price::before {
+  content: '€';
+}
+
+.card-yen .card-price::before {
+  content: '¥';
+}
+
+.card-monthly .card-price::after {
+  content: '/month';
+  font-size: 8px;
+}
+
+.card-yearly .card-price::after {
+  content: '/year';
+  font-size: 8px;
+}
+
+.card-day .card-price::after {
+  content: '/day';
+  font-size: 8px;
+}
+
+.card-price-emty .card-price::after {
+  content: '';
+}
+
+.card-price-emty .card-price::before {
+  content: '';
+}
+
+.custom-checkbox > .checkbox {
+  display: none;
+}
+.custom-checkbox > .checkbox + label {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.custom-checkbox > .checkbox:checked + label[for='colorRed'] {
+  color: red;
+  border-color: red;
+}
+
+.custom-checkbox > .checkbox:checked + label[for='colorGreen'] {
+  color: green;
+  border-color: green;
+}
+
+.custom-checkbox > .checkbox:checked + label[for='colorBlue'] {
+  color: blue;
+  border-color: blue;
+}

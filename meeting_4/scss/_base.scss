@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  color: rgb(31, 31, 31);
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+}
+
+body {
+  background: #5900ff;
+}
+.header {
+  background-color: #000;
+  height: $header-height;
+}

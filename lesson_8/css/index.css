@@ -1,0 +1,124 @@
+:root {
+  --main-text-color: #333333;
+  --active-text-color: #fede60;
+  --main-section-bg-color: #fede60;
+  --regular-font-size: 20px;
+  --large-font-size: 2rem;
+  --spacing: 8px;
+  --header-height: 80px;
+  --floated-elements-z-index: 10;
+}
+
+@font-face {
+  font-family: "My Custom Font";
+  font-weight: 500;
+  src: url("./fonts/augustlight-webfont.eot") format("opentype"), url("./fonts/augustlight-webfont.ttf") format("truetype"), url("./fonts/augustlight-webfont.woff") format("woff"), url("./fonts/augustlight-webfont.woff2") format("woff2");
+}
+@font-face {
+  font-family: "My Custom Font";
+  font-weight: 700;
+  src: url("./fonts/augustbold-webfont.eot") format("opentype"), url("./fonts/augustbold-webfont.ttf") format("truetype"), url("./fonts/augustbold-webfont.woff") format("woff"), url("./fonts/augustbold-webfont.woff2") format("woff2");
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--regular-font-size);
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  color: var(--main-text-color);
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+input,
+button {
+  border: none;
+}
+
+body {
+  background: #5900ff;
+}
+
+.test {
+  background-color: aqua;
+  background: red;
+}
+.test::before {
+  content: "";
+  border: 1px solid red;
+}
+.test > * {
+  color: aqua;
+  border: 1px solid green;
+}
+.test::after {
+  content: "hello";
+  color: yellow;
+  font-size: 2rem;
+}
+.test__item {
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1280px;
+}
+.test__link {
+  color: brown;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1280px;
+}
+
+.lighter-red {
+  background: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.lighter-green {
+  background: green;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.lighter-blue {
+  background: blue;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.lighter-yellow {
+  background: yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=index.css.map */

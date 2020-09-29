@@ -1,0 +1,170 @@
+.header {
+  background-color: #fff;
+  height: var(--header-height);
+}
+
+.main-section {
+  background-color: #fede60;
+}
+
+.page-content {
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--spacing);
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.header > .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 36px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin: 0 20px;
+  display: flex;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.main-section {
+  min-height: 750px;
+}
+
+.main-section__wrapper {
+  display: flex;
+  border: 1px solid red;
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 520px;
+}
+
+.text-column__title {
+  font-size: var(--large-font-size);
+  font-weight: 500;
+}
+
+.text-column__title_light {
+  font-weight: 300;
+}
+
+.text-column__description {
+  margin-top: 55px;
+  font-weight: 300;
+}
+
+.controls-wrapper {
+  margin-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.stores-link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 224px;
+  height: 80px;
+  padding-left: 88px;
+  border: 2px solid #3e3e3e;
+  position: relative;
+  letter-spacing: 0.652123px;
+}
+
+.stores-link:last-child {
+  margin-left: 60px;
+}
+
+.stores-link_apple {
+  border-radius: 100px;
+}
+
+.stores-link_apple::before {
+  --size: 40px;
+  content: '';
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+  background-image: url(../img/apple\ logosvg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.stores-link_android {
+  border-radius: 12px;
+}
+
+.stores-link_android {
+  padding-left: 75px;
+}
+
+.stores-link_android::before {
+  --size: 38px;
+  content: '';
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px;
+  background-image: url(../img/Object@2x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-section__column {
+  flex-grow: 1;
+  position: relative;
+  border: 1px solid green;
+}
+
+.main-section__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 754px;
+}

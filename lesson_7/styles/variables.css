@@ -1,0 +1,10 @@
+:root {
+  --main-text-color: #333333;
+  --active-text-color: #fede60;
+  --main-section-bg-color: #fede60;
+  --regular-font-size: 20px;
+  --large-font-size: 2rem;
+  --spacing: 8px;
+  --header-height: 80px;
+  --floated-elements-z-index: 10;
+}

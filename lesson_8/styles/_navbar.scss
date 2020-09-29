@@ -1,0 +1,30 @@
+@import './mixins';
+.test {
+  background-color: $my-cool-bg-color;
+  &::before {
+    content: '';
+    border: 1px solid red;
+  }
+  @include example;
+  &__item {
+    background-color: $my-cool-bg-color;
+    @include absoluteCenter;
+    @include pageContent;
+  }
+  &__link {
+    color: brown;
+    @include absoluteCenter;
+    @include pageContent;
+  }
+}
+
+$colors: (red green blue yellow);
+
+@each $color in $colors {
+  .lighter-#{$color} {
+    background: $color;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+}

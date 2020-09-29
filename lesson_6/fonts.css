@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'My Custom Font';
+  font-weight: 500;
+  src: url('./fonts/augustlight-webfont.eot') format('opentype'),
+    url('./fonts/augustlight-webfont.ttf') format('truetype'),
+    url('./fonts/augustlight-webfont.woff') format('woff'),
+    url('./fonts/augustlight-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'My Custom Font';
+  font-weight: 700;
+  src: url('./fonts/augustbold-webfont.eot') format('opentype'),
+    url('./fonts/augustbold-webfont.ttf') format('truetype'),
+    url('./fonts/augustbold-webfont.woff') format('woff'),
+    url('./fonts/augustbold-webfont.woff2') format('woff2');
+}

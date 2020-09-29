@@ -1,0 +1,117 @@
+/* DESKTOP FIRST */
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    border-bottom: 1px solid var(--main-text-color);
+  }
+
+  .nav {
+    align-items: center;
+  }
+
+  .nav__toggle {
+    --size: 30px;
+    width: var(--size);
+    height: var(--size);
+
+    border: none;
+    position: relative;
+  }
+
+  .nav__toggle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    top: 33.3333%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-text-color);
+    transition: all 0.3s;
+  }
+
+  .nav__toggle::before {
+    content: '';
+    position: absolute;
+    bottom: 33.3333%;
+    width: 20px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--main-text-color);
+    transition: all 0.3s;
+  }
+
+  .main {
+    margin-top: var(--header-height);
+  }
+  /* PHABLETS */
+  .main-section {
+    background-color: aqua;
+  }
+  .nav__toggle {
+    display: inherit;
+  }
+
+  .nav__list {
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    z-index: var(--floated-elements-z-index);
+    justify-content: flex-start;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform 0.5s, opacity 0.5s, visibility 0.2s;
+  }
+
+  .nav__item {
+    border-bottom: 1px solid var(--main-text-color);
+    width: 80%;
+  }
+
+  .nav__item {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .nav__link {
+  }
+
+  .main-section {
+    display: none;
+  }
+
+  .nav.expand .nav__list {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+
+  .nav.expand .nav__toggle::after {
+    transform: translateX(-50%) rotate(-45deg);
+    top: 50%;
+  }
+
+  .nav.expand .nav__toggle::before {
+    transform: translateX(-50%) rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
