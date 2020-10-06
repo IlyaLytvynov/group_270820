@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions deep dive</title>
+  </head>
+  <body>
+    <button onclick="initCalculations()">add</button>
+    <script src="./experiment1.js"></script>
+    <script src="./experiment2.js"></script>
+
+    <script>
+      // чистая функция
+      const sum = (operandA, operandB) => {
+        const result = operandA + operandB;
+        return result;
+      };
+
+      const dif = (operandA, operandB) => {
+        const result = operandA - operandB;
+        return result;
+      };
+
+      const requestUserInput = () => {
+        let first;
+        let second;
+        do {
+          first = Number(prompt('Введите число A'));
+          second = Number(prompt('Введите число B'));
+        } while(isNaN(first) || isNaN(second));
+
+        return [first, second];// массив
+      }
+
+      const requestAction = () => {
+        let action;
+        do {
+          action = prompt('Введите символ + - * /');
+          if (action === null || action === '+' || action === '-' || action === '*' || action === '/') {
+            break;
+          }
+        } while(true);
+
+        return action;
+      }
+
+      const display = (data) => {
+        alert(data)
+      }
+
+      function calculate() {
+        const operands = requestUserInput();// возвращает массив с двумя элементами
+        const action = requestAction();
+        
+        switch(action) {
+          case '+':
+            return sum(operands[0],  operands[1]);
+          case '-':
+            return dif(operands[0],  operands[1]);
+          default:
+            alert('Оператор не найден!');
+        }
+      }
+
+      function initCalculations() {
+        const result = calculate();
+        display('Результат вычислений: ' +  result)
+      }
+
+    </script>
+  </body>
+</html>

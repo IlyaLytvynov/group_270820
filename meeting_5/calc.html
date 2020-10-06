@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="start()">STart</button>
+    <script>
+
+      function start() {
+        const first = Number(prompt('Введите число A'));
+        const second = Number(prompt('Введите число B'));        
+
+        if (isNaN(first) || isNaN(second)) {
+          alert('Вы ввели не число!');
+        } else {
+          const action = prompt('Введите действие');
+          if (action === '+') {
+            alert(first + second);
+          } else if (action === '-') {
+            alert(first - second);
+          } else if (action === '*') {
+            alert(first * second);
+          } else {
+            alert(first / second);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
