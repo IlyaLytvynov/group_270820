@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <button class="btn btn_success my-btn" id="test">CLick me</button>
+    <input type="text " />
+    <div>HELLO WORLD</div>
+    <script>
+      (function () {
+        const myButton = document.querySelector('.my-btn'); // es5
+
+        myButton.addEventListener('click', function () {
+          const delta = 100;
+          myButton.style.position = 'relative';
+          myButton.style.left = parseInt(myButton.style.left) + 100 + 'px';
+          myButton.classList.add('btn_clicked'); // добавляет CSS клас
+          myButton.textContent = 'Group 270820!!!';
+        });
+
+        myButton.addEventListener('mouseenter', function () {
+          console.log('MOUSE ENTER');
+        });
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+.select {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+}
+.select__title {
+  width: 100%;
+  border: none;
+  background-color: #161616;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+}
+.select__options {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  transition: all 0.3s;
+}
+.select__option {
+  width: 100%;
+  border: none;
+  background-color: #acacac;
+  font-size: 1rem;
+  text-align: left;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #2e2e2e;
+}
+.select_active .select__options {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=select.css.map */

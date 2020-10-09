@@ -1,0 +1,24 @@
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  box-shadow: 0 4px 0 0 rgba(32, 32, 32, 0.5);
+  outline: none;
+  transition: all 0.4s;
+  position: relative;
+  left: 0;
+}
+.btn:active {
+  box-shadow: 0 1px 0 0 rgba(32, 32, 32, 0.5);
+  transform: translateY(3px);
+}
+.btn_success {
+  background-color: yellowgreen;
+}
+.btn_clicked {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

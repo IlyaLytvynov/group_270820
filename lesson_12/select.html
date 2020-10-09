@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/select.css" />
+  </head>
+  <body>
+    <div class="select">
+      <button class="select__title">Select...</button>
+      <ul class="select__options">
+        <li class="select__item">
+          <button class="select__option select__option_1">Option 1</button>
+        </li>
+        <li class="select__item">
+          <button class="select__option select__option_2">Option 2</button>
+        </li>
+        <li class="select__item">
+          <button class="select__option select__option_3">Option 3</button>
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      (function () {
+        const selectElement = document.querySelector('.select');
+        const titleElement = selectElement.querySelector('.select__title');
+        const button1 = selectElement.querySelector('.select__option_1');
+        const button2 = selectElement.querySelector('.select__option_2');
+        const button3 = selectElement.querySelector('.select__option_3');
+
+        function titleClickHandler() {
+          console.log('CLICKED ON BUTTON');
+          selectElement.classList.toggle('select_active');
+        }
+
+        button1.addEventListener('click', function () {
+          console.log(button1.textContent);
+          titleElement.textContent = button1.textContent;
+          selectElement.classList.remove('select_active');
+        });
+
+        button2.addEventListener('click', function () {
+          console.log(button2.textContent);
+          titleElement.textContent = button2.textContent;
+          selectElement.classList.remove('select_active');
+        });
+
+        button3.addEventListener('click', function () {
+          console.log(button3.textContent);
+          titleElement.textContent = button3.textContent;
+          selectElement.classList.remove('select_active');
+        });
+
+        titleElement.addEventListener('click', titleClickHandler);
+      })();
+    </script>
+  </body>
+</html>
