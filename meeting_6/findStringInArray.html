@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /**
+       * @param {Array<string>} arrayWithStrings массив со строками
+       */
+      function findStringIndex(arrayWithStrings, stringToFind) {
+        // let index = -1;
+        // for (let i = 0; i < arrayWithStrings.length; i++) {
+        //   if (arrayWithStrings[i] === stringToFind) {
+        //     index = i;
+        //     break;
+        //   }
+        // }
+
+        // return index;
+        return arrayWithStrings.indexOf(stringToFind);
+      }
+      findStringIndex(['hello', 'test', 'world'], 'test'); // 1 -1
+    </script>
+  </body>
+</html>

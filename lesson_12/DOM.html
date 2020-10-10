@@ -23,6 +23,8 @@
         });
 
         myButton.addEventListener('mouseenter', function () {
+          console.log(this);
+          this.classsList.add('active');
           console.log('MOUSE ENTER');
         });
       })();
