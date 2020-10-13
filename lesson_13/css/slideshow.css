@@ -1,0 +1,32 @@
+.slideshow {
+  width: 600px;
+  margin: 0 auto;
+}
+.slideshow__viewport {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 2px solid green;
+  overflow: hidden;
+}
+.slideshow__slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  border: 1px solid aqua;
+  transition: transform 0.5s;
+}
+.slideshow__slide {
+  border: 1px solid yellow;
+}
+
+.rectangle {
+  background: red;
+  width: 600px;
+  height: 300px;
+}
+
+/*# sourceMappingURL=slideshow.css.map */

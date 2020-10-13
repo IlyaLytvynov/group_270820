@@ -1,27 +1,28 @@
 (() => {
-  const redElement = document.querySelector('.lighter__light_red');
-  const yellowElement = document.querySelector('.lighter__light_yellow');
-  const greenElement = document.querySelector('.lighter__light_green');
-  const ACTIVE_CLASS_NAME = 'lighter__light_active';
+  function lighter(wrapper) {
+    const elements = wrapper.querySelectorAll('.lighter__light'); // Array<DOMElement>
+    const ACTIVE_CLASS_NAME = 'lighter__light_active';
 
-  function toggleOff() {
-    redElement.classList.remove(ACTIVE_CLASS_NAME);
-    yellowElement.classList.remove(ACTIVE_CLASS_NAME);
-    greenElement.classList.remove(ACTIVE_CLASS_NAME);
+    function toggleOff() {
+      for (const element of elements) {
+        element.classList.remove(ACTIVE_CLASS_NAME);
+      }
+    }
+
+    function toggleOn() {
+      toggleOff();
+      this.classList.add(ACTIVE_CLASS_NAME); // This Элемент ДОМ дерева
+    }
+
+    for (const element of elements) {
+      console.log(element);
+      element.addEventListener('click', toggleOn);
+    }
   }
 
-  redElement.addEventListener('click', function () {
-    toggleOff();
-    redElement.classList.add(ACTIVE_CLASS_NAME);
-  });
+  const lighters = document.querySelectorAll('.lighter');
 
-  yellowElement.addEventListener('click', function () {
-    toggleOff();
-    yellowElement.classList.add(ACTIVE_CLASS_NAME);
-  });
-
-  greenElement.addEventListener('click', function () {
-    toggleOff();
-    greenElement.classList.add(ACTIVE_CLASS_NAME);
-  });
+  for (const el of lighters) {
+    lighter(el);
+  }
 })();

@@ -24,5 +24,17 @@
 .lighter__light_green.lighter__light_active {
   background-color: green;
 }
+.lighter__light_blue.lighter__light_active {
+  background-color: blue;
+}
+.lighter__light_aqua.lighter__light_active {
+  background-color: aqua;
+}
+.lighter__light_brown.lighter__light_active {
+  background-color: brown;
+}
+.lighter__light_magenta.lighter__light_active {
+  background-color: magenta;
+}
 
 /*# sourceMappingURL=styles.css.map */
