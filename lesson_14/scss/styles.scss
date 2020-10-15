@@ -1,0 +1,26 @@
+$lights: red, yellow, green, blue, aqua, brown, magenta; // ARRAY
+
+.lighter {
+  margin: 0 auto;
+  border: 1px solid grey;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__light {
+    width: 80px;
+    height: 80px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: none;
+    @each $light in $lights {
+      &_#{'' + $light} {
+        &.lighter__light_active {
+          background-color: $light;
+        }
+      }
+    }
+  }
+}

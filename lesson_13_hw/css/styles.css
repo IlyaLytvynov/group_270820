@@ -1,0 +1,28 @@
+.lighter {
+  margin: 0 auto;
+  border: 1px solid grey;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lighter__light {
+  width: 80px;
+  height: 80px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+.lighter__light_red.lighter__light_active {
+  background-color: red;
+}
+.lighter__light_yellow.lighter__light_active {
+  background-color: yellow;
+}
+.lighter__light_green.lighter__light_active {
+  background-color: green;
+}
+
+/*# sourceMappingURL=styles.css.map */
