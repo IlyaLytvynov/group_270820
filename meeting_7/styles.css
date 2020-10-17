@@ -1,0 +1,36 @@
+.collapsible {
+}
+
+.collapsible__title {
+  width: 100%;
+  border: none;
+  background-color: grey;
+  color: #fff;
+  display: block;
+  border-radius: 0;
+  position: relative;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.collapsible__title::after {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.collapsible__content {
+  margin: 0;
+  padding: 0 10px;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  max-height: 0;
+  background-color: #f1f1f1;
+}
+
+/* .collapsible_active .collapsible__content {
+  max-height: 100px;
+} */
