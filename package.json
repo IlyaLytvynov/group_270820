@@ -1,0 +1,23 @@
+{
+  "name": "group_270820",
+  "version": "1.0.0",
+  "description": "Web academy group 2708 materials",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IlyaLytvynov/group_270820.git"
+  },
+  "author": "ilyalytvynov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IlyaLytvynov/group_270820/issues"
+  },
+  "homepage": "https://github.com/IlyaLytvynov/group_270820#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

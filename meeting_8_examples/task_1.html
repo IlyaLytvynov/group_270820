@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cars</title>
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+      class Car {
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+          this.render();
+        }
+
+        render() {
+          const carHtml = '<img src="./car.png">';
+
+          this.carElement = $(carHtml);
+
+          this.carElement.css({
+            position: 'absolute',
+            left: this.x,
+            top: this.y,
+          });
+
+          $('body').append(this.carElement);
+        }
+
+        moveRight() {
+          this.x += 5;
+
+          this.carElement.css({
+            left: this.x,
+            top: this.y,
+          });
+        }
+
+        moveLeft() {
+          this.x -= 5;
+
+          this.carElement.css({
+            left: this.x,
+            top: this.y,
+          });
+        }
+
+        moveUp() {
+          this.y -= 5;
+
+          this.carElement.css({
+            left: this.x,
+            top: this.y,
+          });
+        }
+
+        moveDown() {
+          this.y += 5;
+
+          this.carElement.css({
+            left: this.x,
+            top: this.y,
+          });
+        }
+      }
+      const tesla = new Car(20, 20);
+      const nissan = new Car(100, 200);
+    </script>
+  </body>
+</html>
