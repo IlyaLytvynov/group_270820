@@ -1,0 +1,3 @@
+.lighter{margin:0 auto;border:1px solid gray;width:100px;display:flex;flex-direction:column;justify-content:center;align-items:center}.lighter__light{width:80px;height:80px;border:1px solid gray;border-radius:50%;background-color:transparent;outline:none}.lighter__light_red.lighter__light_active{background-color:red}.lighter__light_yellow.lighter__light_active{background-color:#ff0}.lighter__light_green.lighter__light_active{background-color:green}.lighter__light_blue.lighter__light_active{background-color:blue}.lighter__light_aqua.lighter__light_active{background-color:aqua}.lighter__light_brown.lighter__light_active{background-color:brown}.lighter__light_magenta.lighter__light_active{background-color:#f0f}
+
+/*# sourceMappingURL=test.css.map*/

@@ -1,0 +1,10 @@
+.article {
+  background: #6b6868;
+  color: #fff;
+  &__title {
+    font-size: 2rem;
+    &_outlined {
+      border: 2px solid green;
+    }
+  }
+}

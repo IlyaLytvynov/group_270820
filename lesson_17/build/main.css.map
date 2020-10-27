@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://lesson_17/src/article.scss"],"names":[],"mappings":"AAAA,SACE,mBACA,WACA,gBACE,eACA,yBACE,uB","file":"main.css","sourcesContent":[".article {\n  background: #6b6868;\n  color: #fff;\n  &__title {\n    font-size: 2rem;\n    &_outlined {\n      border: 2px solid green;\n    }\n  }\n}\n"],"sourceRoot":""}
